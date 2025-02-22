@@ -1,19 +1,19 @@
 #include <stdio.h>
 //criado 2 variáveis para cadastro das cartas 
 //colocado valores de string conforme a quantidade de dados digitados
-//char declaradas como string para imprimir os nomes de cidades com mais de 10 caracteres
+//char declaradas como string para imprimir os nomes de cidades
 //utilizado printf("\n") para deixar espaços entre os dados exibidos em tela
 int main() {
     char estado1, estado2; 
     char codigocarta1[4], codigocarta2[4];
-    char nomecidade1[50], nomecidade2[50];
+    char nomecidade1[30], nomecidade2[30];
     int populacao1, populacao2;
     float areakm1, areakm2;
     float pib1, pib2;
     int pontosturisticos1, pontosturisticos2;    
     //informações da carta 01
     printf("Carta 1: \nDigite o estado: \n");
-    scanf("%c", estado1);
+    scanf("%c", &estado1);
     
     printf("Digite o código da carta: \n");
     scanf("%s", codigocarta1);
@@ -35,7 +35,7 @@ int main() {
     //informações da carta 02
     printf("\n");
     printf("Carta 2 \nDigite o estado: \n");
-    scanf("%c", estado2);
+    scanf("%s", &estado2);
 
     printf("Digite o código da carta: \n");
     scanf("%s", codigocarta2);
